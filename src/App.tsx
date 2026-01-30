@@ -13,7 +13,7 @@ function App() {
         </span>
       </div>
       <button className=' flex  rounded-2xl bg-amber-400 h-10 w-28 justify-center pt-2 gap-1'>
-       <Menu />
+        <Menu />
         Katalog
       </button>
 
@@ -21,26 +21,34 @@ function App() {
         <input
           type="search"
           placeholder="Qidiruv"
-          className="border-2 border-gray-500 px-4 py-2 rounded-2xl outline-none w-250"
+          className="border-2 border-gray-500 px-4 py-2 rounded-2xl outline-none w-230"
 
         />
       </div>
       <div className='flex text-gray-700 gap-4 me-4 '>
         <div className='flex flex-col items-center'>
           <Package />
-          <span>Buyurtma xolati</span>
+          <span className='text-sm'>
+            Buyurtma xolati
+          </span>
         </div>
         <div className='flex flex-col items-center'>
           <ShoppingCart />
-          <span>Savat</span>
+          <span className='text-sm'>
+            Savat
+          </span>
         </div>
         <div className='flex flex-col items-center'>
           <HeartCrack />
-          <span>Sevimli</span>
+          <span className='text-sm'>
+            Sevimli
+          </span>
         </div>
         <div className='flex flex-col items-center'>
           <UserRoundPen />
-          <span>Kirish</span>
+          <span className='text-sm'>
+            Kirish
+          </span>
         </div>
 
       </div>
