@@ -1,4 +1,4 @@
-import { HeartCrack, Package, ShoppingCart, UserRoundPen } from 'lucide-react'
+import { HeartCrack, Menu, Package, ShoppingCart, UserRoundPen } from 'lucide-react'
 import './App.css'
 function App() {
   return (
@@ -12,6 +12,10 @@ function App() {
           Plast
         </span>
       </div>
+      <button className=' flex  rounded-2xl bg-amber-400 h-10 w-28 justify-center pt-2 gap-1'>
+       <Menu />
+        Katalog
+      </button>
 
       <div>
         <input
