@@ -13,7 +13,7 @@ const profilecard = () => {
           </span>
         </div>
         <div >
-          <img className='w-50 rounded-2xl'
+          <img className='w-50 rounded-4xl'
             src="./futurestartup.jpg"
             alt="Ilustration" />
         </div>
