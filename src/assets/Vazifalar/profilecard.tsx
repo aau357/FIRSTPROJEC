@@ -1,7 +1,6 @@
-import './App.css'
-function App() {
+const profilecard = () => {
   return (
-    <div className='flex justify-center'>
+ <div className='flex justify-center'>
       {/* for card */}
       <div className='flex  border w-100 p-2 m-2  rounded-2xl shadow-xs hover:shadow-2xl justify-between'>
         {/* for text */}
@@ -21,7 +20,7 @@ function App() {
       </div>
 
     </div>
-
   )
 }
-export default App
+
+export default profilecard
