@@ -1,4 +1,4 @@
-const card = () => {
+function card() {
     return (
         <div>
             {/* card */}
