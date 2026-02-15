@@ -1,17 +1,8 @@
-import { useState } from "react";
 
- function App   () {
-  const [isVisible, setIsVisible] = useState(true);
-
+const App = () => {
   return (
-    <div >
-      <button onClick={() => setIsVisible(!isVisible)}>
-        {isVisible ? "Yashirish" : "Korsatish"}
-      </button>
-
-    {isVisible && <p>Bu matn chiqadi</p>}
-
-    </div>
-  );
+    <div>App</div>
+  )
 }
- export default App
+
+export default App
