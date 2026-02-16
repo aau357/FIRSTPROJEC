@@ -1,8 +1,45 @@
+import { useState } from "react";
 
-const App = () => {
-  return (
-    <div>App</div>
-  )
+interface Cart {
+  count: number;
+  price: number;
 }
 
-export default App
+function Savatcha() {
+
+  const [cart, setCart] = useState<Cart>({
+    count: 1,
+    price: 10000
+  });
+
+  return (
+    <div>
+
+      <h1>Mahsulotlar: {cart.count}</h1>
+      <h2>itogo: {cart.count * cart.price} </h2>
+
+      <div>
+        <button
+          onClick={() =>
+            setCart({ 
+              ...cart, count: cart.count + 1
+             })
+          }
+        >
+          Maxsulot qoshish
+        </button>
+
+        <button
+          onClick={() =>
+            setCart({ ...cart, count: cart.count - 1 })
+          }
+        >
+          Mahsulot ayirish
+        </button>
+      </div>
+
+    </div>
+  );
+}
+
+export default Savatcha;

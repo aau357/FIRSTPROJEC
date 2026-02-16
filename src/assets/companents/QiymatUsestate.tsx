@@ -8,8 +8,8 @@ const [count, setCount] = useState(0);
       <h2>Counter: {count}</h2>
 
       <div className="flex  justify-center gap-2.5">
-        <button onClick={() => setCount(count + 1)}>+</button>
-        <button onClick={() => setCount(count - 1)}>-</button>
+        <button onClick={() => setCount(count +1)}>+</button>
+        <button onClick={() => setCount(count -1)}>-</button>
         <button onClick={() => setCount(0)}>Reset</button>
 
       </div>
