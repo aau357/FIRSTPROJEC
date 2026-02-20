@@ -1,41 +1,33 @@
 import { useState } from "react";
-import type { ChangeEvent } from "react";
 
-interface PasswordField {
+interface PasswordState {
   value: string;
   show: boolean;
 }
 
 function App() {
-  const [passwordField, setPasswordField] = useState<PasswordField>({
+  const [password, setPassword] = useState<PasswordState>({
     value: "",
-    show: false
+    show: false,
   });
-
-  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
-    setPasswordField((prev: PasswordField) => ({
-      ...prev,
-      value: e.target.value
-    }));
-  };
-
-  const togglePassword = () => {
-    setPasswordField((prev: PasswordField) => ({
-      ...prev,
-      show: !prev.show
-    }));
-  };
 
   return (
     <div>
       <input
-        type={passwordField.show ? "text" : "password"}
-        value={passwordField.value}
-        onChange={handleChange}
+        type={password.show ? "text" : "password"}
+        value={password.value}
+        onChange={(e) =>
+          setPassword({ ...password, value: e.target.value })
+        }
       />
 
-      <button type="button" onClick={togglePassword}>
-        {passwordField.show ? "Yashirish" : "Ko‘rsatish"}
+      <button
+        type="button"
+        onClick={() =>
+          setPassword({ ...password, show: !password.show })
+        }
+      >
+        {password.show ? "Yashirish" : "Ko‘rsatish"}
       </button>
     </div>
   );
